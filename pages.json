@@ -33,6 +33,12 @@
 			}
 		},
 		{
+			"path": "pages/goods/comment",
+			"style": {
+				"navigationBarTitleText": "评论"
+			}
+		},
+		{
 			"path": "pages/goods/goods",
 			"style": {
 				"navigationBarTitleText": "",

@@ -104,11 +104,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"components/status":1,"pages/tabBar/home/header":1,"pages/goods/detailHeader":1};
+/******/ 		var cssChunks = {"components/status":1,"pages/tabBar/home/header":1,"components/Modal":1,"pages/goods/detailHeader":1,"components/count":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "" + ({"components/status":"components/status","pages/tabBar/home/header":"pages/tabBar/home/header","pages/goods/detailHeader":"pages/goods/detailHeader"}[chunkId]||chunkId) + ".wxss";
+/******/ 				var href = "" + ({"components/status":"components/status","pages/tabBar/home/header":"pages/tabBar/home/header","components/Modal":"components/Modal","pages/goods/detailHeader":"pages/goods/detailHeader","components/count":"components/count"}[chunkId]||chunkId) + ".wxss";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {

@@ -195,7 +195,7 @@ var _network = _interopRequireDefault(__webpack_require__(/*! ../../../utils/net
 //
 //
 //
-var header = function header() {__webpack_require__.e(/*! require.ensure | pages/tabBar/home/header */ "pages/tabBar/home/header").then((function () {return resolve(__webpack_require__(/*! ../home/header.vue */ 60));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { data: function data() {return { list: [], currentIndex: 0 };}, components: { 'app-header': header }, onLoad: function onLoad() {this.initData();}, methods: { itemList: function itemList(item) {// console.log(item)
+var header = function header() {__webpack_require__.e(/*! require.ensure | pages/tabBar/home/header */ "pages/tabBar/home/header").then((function () {return resolve(__webpack_require__(/*! ../home/header.vue */ 70));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { data: function data() {return { list: [], currentIndex: 0 };}, components: { 'app-header': header }, onLoad: function onLoad() {this.initData();}, methods: { itemList: function itemList(item) {// console.log(item)
       uni.navigateTo({ url: "../../goods/goods?name=".concat(item.name) });}, handle: function handle(index) {this.currentIndex = index;}, initData: function initData() {var _this = this;this.request({ url: _network.default.categoryData, success: function success(res) {console.log(res);_this.list = res.data;} });
 
     } } };exports.default = _default;

@@ -1246,7 +1246,61 @@ var render = function() {
     "view",
     [
       _c("app-status", { attrs: { _i: 1 } }),
-      _c("detailHeader", { attrs: { _i: 2 } })
+      _c("detailHeader", { attrs: { _i: 2 } }),
+      _c(
+        "view",
+        { staticClass: _vm._$s(3, "sc", "swiper"), attrs: { _i: 3 } },
+        [
+          _c(
+            "swiper",
+            { attrs: { _i: 4 }, on: { change: _vm.swiperchange } },
+            _vm._l(
+              _vm._$s(5, "f", { forItems: _vm.itemData.swiperList }),
+              function(item, $10, $20, $30) {
+                return _c(
+                  "swiper-item",
+                  { key: _vm._$s(5, "f", { forIndex: $20, key: item.id }) },
+                  [
+                    _c("image", {
+                      attrs: {
+                        src: _vm._$s("6-" + $30, "a-src", item.img),
+                        _i: "6-" + $30
+                      }
+                    })
+                  ]
+                )
+              }
+            ),
+            0
+          ),
+          _c(
+            "view",
+            { staticClass: _vm._$s(7, "sc", "indicator"), attrs: { _i: 7 } },
+            [
+              _vm._v(
+                _vm._$s(7, "t0-0", _vm._s(_vm.currentIndex + 1)) +
+                  _vm._$s(7, "t0-1", _vm._s(_vm.itemData.swiperList.length))
+              )
+            ]
+          )
+        ]
+      ),
+      _c(
+        "view",
+        { staticClass: _vm._$s(8, "sc", "detail-info box"), attrs: { _i: 8 } },
+        [
+          _c(
+            "view",
+            { staticClass: _vm._$s(9, "sc", "price"), attrs: { _i: 9 } },
+            [_vm._v(_vm._$s(9, "t0-0", _vm._s(_vm.itemInfo.price)))]
+          ),
+          _c(
+            "view",
+            { staticClass: _vm._$s(10, "sc", "title"), attrs: { _i: 10 } },
+            [_vm._v(_vm._$s(10, "t0-0", _vm._s(_vm.itemInfo.name)))]
+          )
+        ]
+      )
     ],
     1
   )
@@ -1277,7 +1331,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _HBu
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\nvar _detailHeader = _interopRequireDefault(__webpack_require__(/*! ./detailHeader.vue */ 36));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} //\n//\n//\n//\n//\n//\n//\n//\n//\n//头部返回\nvar _default = { components: { detailHeader: _detailHeader.default }, data: function data() {return { itemInfo: { name: '', price: '', number: 1,\n        spec: '' } };\n\n\n  },\n  onLoad: function onLoad(options) {\n    // console.log(JSON.parse(options.goodsInfo))\n    this.itemInfo = JSON.parse(options.goodsInfo);\n  } };exports.default = _default;//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInVuaS1hcHA6Ly8vcGFnZXMvZ29vZHMvZGV0YWlsLnZ1ZSJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7OztBQVdBLDhGOzs7Ozs7Ozs7QUFEQTtlQUVBLEVBQ0EsY0FDQSxtQ0FEQSxFQURBLEVBSUEsSUFKQSxrQkFJQSxDQUNBLFNBQ0EsWUFDQSxRQURBLEVBRUEsU0FGQSxFQUdBLFNBSEE7QUFJQSxnQkFKQSxFQURBOzs7QUFRQSxHQWJBO0FBY0EsUUFkQSxrQkFjQSxPQWRBLEVBY0E7QUFDQTtBQUNBO0FBQ0EsR0FqQkEsRSIsImZpbGUiOiIzNS5qcyIsInNvdXJjZXNDb250ZW50IjpbIjx0ZW1wbGF0ZT5cclxuXHQ8dmlldyBjbGFzcz1cIlwiPlxyXG5cdFx0PCEtLSDnirbmgIHpga7nvakgLS0+XHJcblx0XHQ8YXBwLXN0YXR1cy8+XHJcblx0XHQ8ZGV0YWlsSGVhZGVyLz5cclxuXHRcdDEyM1xyXG5cdDwvdmlldz5cbjwvdGVtcGxhdGU+XG5cbjxzY3JpcHQ+XHJcblx0Ly/lpLTpg6jov5Tlm55cclxuXHRpbXBvcnQgZGV0YWlsSGVhZGVyIGZyb20gJy4vZGV0YWlsSGVhZGVyLnZ1ZSdcclxuXHRleHBvcnQgZGVmYXVsdCB7XHJcblx0XHRjb21wb25lbnRzOntcclxuXHRcdFx0ZGV0YWlsSGVhZGVyXHJcblx0XHR9LFxyXG5cdFx0ZGF0YSgpe1xyXG5cdFx0XHRyZXR1cm4ge1xyXG5cdFx0XHRcdGl0ZW1JbmZvOntcclxuXHRcdFx0XHRcdG5hbWU6JycsXHJcblx0XHRcdFx0XHRwcmljZTonJyxcclxuXHRcdFx0XHRcdG51bWJlcjoxLFxyXG5cdFx0XHRcdFx0c3BlYzonJ1xyXG5cdFx0XHRcdH1cclxuXHRcdFx0fVxyXG5cdFx0fSxcclxuXHRcdG9uTG9hZChvcHRpb25zKSB7XHJcblx0XHRcdC8vIGNvbnNvbGUubG9nKEpTT04ucGFyc2Uob3B0aW9ucy5nb29kc0luZm8pKVxyXG5cdFx0XHR0aGlzLml0ZW1JbmZvPUpTT04ucGFyc2Uob3B0aW9ucy5nb29kc0luZm8pXHJcblx0XHR9XHJcblx0fVxuPC9zY3JpcHQ+XG5cbjxzdHlsZT5cbjwvc3R5bGU+XG4iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///35\n");
+eval("/* WEBPACK VAR INJECTION */(function(__f__) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _detailHeader = _interopRequireDefault(__webpack_require__(/*! ./detailHeader.vue */ 36));\n\nvar _network = _interopRequireDefault(__webpack_require__(/*! ../../utils/network.js */ 14));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} //\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//头部返回\n//封装网络请求\nvar _default = { components: { detailHeader: _detailHeader.default }, data: function data() {return { itemData: { swiperList: [] }, itemInfo: { name: '', price: '', number: 1, spec: '' }, currentIndex: 0 };}, onLoad: function onLoad(options) {// console.log(JSON.parse(options.goodsInfo))\n    this.itemInfo = JSON.parse(options.goodsInfo);this.initData();}, methods: { swiperchange: function swiperchange(e) {// console.log(e)\n      this.currentIndex = e.detail.current;},\n    initData: function initData() {var _this = this;\n      this.request({\n        url: _network.default.detailList,\n        success: function success(res) {\n          // console.log(res.data)\n          _this.itemData = res.data;\n          __f__(\"log\", _this.itemData, \" at pages/goods/detail.vue:66\");\n        } });\n\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-uni/lib/format-log.js */ 7)[\"default\"]))//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInVuaS1hcHA6Ly8vcGFnZXMvZ29vZHMvZGV0YWlsLnZ1ZSJdLCJuYW1lcyI6WyJjb21wb25lbnRzIiwiZGV0YWlsSGVhZGVyIiwiZGF0YSIsIml0ZW1EYXRhIiwic3dpcGVyTGlzdCIsIml0ZW1JbmZvIiwibmFtZSIsInByaWNlIiwibnVtYmVyIiwic3BlYyIsImN1cnJlbnRJbmRleCIsIm9uTG9hZCIsIm9wdGlvbnMiLCJKU09OIiwicGFyc2UiLCJnb29kc0luZm8iLCJpbml0RGF0YSIsIm1ldGhvZHMiLCJzd2lwZXJjaGFuZ2UiLCJlIiwiZGV0YWlsIiwiY3VycmVudCIsInJlcXVlc3QiLCJ1cmwiLCJpbnRlcmZhY2VzIiwiZGV0YWlsTGlzdCIsInN1Y2Nlc3MiLCJyZXMiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQTJCQTs7QUFFQSw2Riw4RkE3QkE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFFQTtBQUVBO2VBRWUsRUFDZEEsVUFBVSxFQUFFLEVBQ1hDLFlBQVksRUFBWkEscUJBRFcsRUFERSxFQUlkQyxJQUpjLGtCQUlQLENBQ04sT0FBTyxFQUNOQyxRQUFRLEVBQUUsRUFDVEMsVUFBVSxFQUFDLEVBREYsRUFESixFQUtOQyxRQUFRLEVBQUUsRUFDVEMsSUFBSSxFQUFFLEVBREcsRUFFVEMsS0FBSyxFQUFFLEVBRkUsRUFHVEMsTUFBTSxFQUFFLENBSEMsRUFJVEMsSUFBSSxFQUFFLEVBSkcsRUFMSixFQVdOQyxZQUFZLEVBQUUsQ0FYUixFQUFQLENBYUEsQ0FsQmEsRUFtQmRDLE1BbkJjLGtCQW1CUEMsT0FuQk8sRUFtQkUsQ0FDZjtBQUNBLFNBQUtQLFFBQUwsR0FBZ0JRLElBQUksQ0FBQ0MsS0FBTCxDQUFXRixPQUFPLENBQUNHLFNBQW5CLENBQWhCLENBQ0EsS0FBS0MsUUFBTCxHQUNBLENBdkJhLEVBd0JkQyxPQUFPLEVBQUUsRUFDUkMsWUFEUSx3QkFDS0MsQ0FETCxFQUNPLENBQ2Q7QUFDQSxXQUFLVCxZQUFMLEdBQWtCUyxDQUFDLENBQUNDLE1BQUYsQ0FBU0MsT0FBM0IsQ0FDQSxDQUpPO0FBS1JMLFlBTFEsc0JBS0c7QUFDVixXQUFLTSxPQUFMLENBQWE7QUFDWkMsV0FBRyxFQUFFQyxpQkFBV0MsVUFESjtBQUVaQyxlQUFPLEVBQUUsaUJBQUNDLEdBQUQsRUFBUztBQUNqQjtBQUNBLGVBQUksQ0FBQ3hCLFFBQUwsR0FBZ0J3QixHQUFHLENBQUN6QixJQUFwQjtBQUNBLHVCQUFZLEtBQUksQ0FBQ0MsUUFBakI7QUFDQSxTQU5XLEVBQWI7O0FBUUEsS0FkTyxFQXhCSyxFIiwiZmlsZSI6IjM1LmpzIiwic291cmNlc0NvbnRlbnQiOlsiLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cblxuLy/lpLTpg6jov5Tlm55cbmltcG9ydCBkZXRhaWxIZWFkZXIgZnJvbSAnLi9kZXRhaWxIZWFkZXIudnVlJ1xuLy/lsIHoo4XnvZHnu5zor7fmsYJcbmltcG9ydCBpbnRlcmZhY2VzIGZyb20gJy4uLy4uL3V0aWxzL25ldHdvcmsuanMnXG5leHBvcnQgZGVmYXVsdCB7XG5cdGNvbXBvbmVudHM6IHtcblx0XHRkZXRhaWxIZWFkZXJcblx0fSxcblx0ZGF0YSgpIHtcblx0XHRyZXR1cm4ge1xuXHRcdFx0aXRlbURhdGE6IHtcblx0XHRcdFx0c3dpcGVyTGlzdDpbXSxcblx0XHRcdFx0XG5cdFx0XHR9LFxuXHRcdFx0aXRlbUluZm86IHtcblx0XHRcdFx0bmFtZTogJycsXG5cdFx0XHRcdHByaWNlOiAnJyxcblx0XHRcdFx0bnVtYmVyOiAxLFxuXHRcdFx0XHRzcGVjOiAnJ1xuXHRcdFx0fSxcblx0XHRcdGN1cnJlbnRJbmRleDogMFxuXHRcdH1cblx0fSxcblx0b25Mb2FkKG9wdGlvbnMpIHtcblx0XHQvLyBjb25zb2xlLmxvZyhKU09OLnBhcnNlKG9wdGlvbnMuZ29vZHNJbmZvKSlcblx0XHR0aGlzLml0ZW1JbmZvID0gSlNPTi5wYXJzZShvcHRpb25zLmdvb2RzSW5mbylcblx0XHR0aGlzLmluaXREYXRhKClcblx0fSxcblx0bWV0aG9kczoge1xuXHRcdHN3aXBlcmNoYW5nZShlKXtcblx0XHRcdC8vIGNvbnNvbGUubG9nKGUpXG5cdFx0XHR0aGlzLmN1cnJlbnRJbmRleD1lLmRldGFpbC5jdXJyZW50XG5cdFx0fSxcblx0XHRpbml0RGF0YSgpIHtcblx0XHRcdHRoaXMucmVxdWVzdCh7XG5cdFx0XHRcdHVybDogaW50ZXJmYWNlcy5kZXRhaWxMaXN0LFxuXHRcdFx0XHRzdWNjZXNzOiAocmVzKSA9PiB7XG5cdFx0XHRcdFx0Ly8gY29uc29sZS5sb2cocmVzLmRhdGEpXG5cdFx0XHRcdFx0dGhpcy5pdGVtRGF0YSA9IHJlcy5kYXRhXG5cdFx0XHRcdFx0Y29uc29sZS5sb2codGhpcy5pdGVtRGF0YSlcblx0XHRcdFx0fVxuXHRcdFx0fSlcblx0XHR9XG5cdH1cbn1cbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///35\n");
 
 /***/ }),
 /* 36 */

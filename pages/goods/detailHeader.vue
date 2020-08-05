@@ -6,7 +6,7 @@
 			</view>
 			<view class="middle"></view>
 			<view class="icon-btn">
-				<view class="icon iconfont">&#xe6af;</view>
+				<view @click="cart" class="icon iconfont">&#xe6af;</view>
 			</view>
 		</view>
 	</view>
@@ -29,7 +29,12 @@
 		methods:{
 			back(){
 				uni.navigateBack()
-			}
+			},
+      cart(){
+        uni.switchTab({
+          url:'../tabBar/cart/cart'
+        })
+      }
 		}
 	}
 </script>
