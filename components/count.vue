@@ -23,9 +23,11 @@
 				}else{
 					this.itemInfo.number--
 				}
+         this.$emit('chang')
 			},
 			add(){
 				this.itemInfo.number++
+        this.$emit('chang')
 			}
 		},
 		props: {

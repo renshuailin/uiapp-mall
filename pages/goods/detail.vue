@@ -90,7 +90,7 @@
         <view class="cart" @click="cart">
           加入购物车
         </view>
-        <view class="buy">
+        <view class="buy" @click="buy">
           立即购买
         </view>
       </view>
@@ -138,6 +138,19 @@
       this.initData()
     },
     methods: {
+      buy(){
+        let list=[]
+        list.push(this.itemInfo)
+        uni.setStorage({
+          key:'buy',
+          data:list,
+          success: () => {
+            uni.navigateTo({
+              url:'../order/buy'
+            })
+          }
+        })
+      },
       cart(){
         console.log(this.itemInfo)
         //本地存储

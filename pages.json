@@ -38,6 +38,12 @@
 				"navigationBarTitleText": "评论"
 			}
 		},
+    {
+    	"path": "pages/order/buy",
+    	"style": {
+    		"navigationBarTitleText": "确认订单"
+    	}
+    },
 		{
 			"path": "pages/goods/goods",
 			"style": {
