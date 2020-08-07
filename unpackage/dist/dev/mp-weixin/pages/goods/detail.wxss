@@ -183,4 +183,100 @@
   margin-top: 10rpx;
   font-size: 26rpx;
 }
+.des .title {
+  width: 100%;
+  height: 80rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  font-size: 26rpx;
+  color: #999;
+}
+.footer {
+  position: fixed;
+  bottom: 0rpx;
+  width: 92%;
+  padding: 0 4%;
+  height: 99rpx;
+  border-top: solid 1rpx #eee;
+  background-color: #fff;
+  z-index: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.footer .icons {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  height: 99rpx;
+  margin-left: -4%;
+}
+.footer .icons .box {
+  width: 80rpx;
+  height: 80rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.footer .icons .box .icon {
+  font-size: 40rpx;
+  color: #828282;
+}
+.footer .icons .box .text {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  width: 100%;
+  font-size: 22rpx;
+  color: #666;
+}
+.footer .btn {
+  height: 80rpx;
+  border-radius: 40rpx;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  margin-right: -2%;
+}
+.footer .btn .cart,
+.footer .btn .buy {
+  height: 80rpx;
+  padding: 0 40rpx;
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  font-size: 28rpx;
+}
+.footer .btn .cart {
+  background-color: #f0b46c;
+}
+.footer .btn .buy {
+  background-color: #f06c7a;
+}
 

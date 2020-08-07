@@ -74,7 +74,7 @@
 		onLoad() {
 			this.initData()
 		},
-		methods: { 
+		methods: {
 			handl(item){
 				uni.showToast({
 					title:item.title,
@@ -107,7 +107,7 @@
 
 <style lang="scss">
 	.swiper {
-		height: 1000upx;
+		// height: 1000upx;
 		width: 100%;
 		margin-top: 10upx;
 		display: flex;
@@ -115,7 +115,7 @@
 
 		.swiper-box {
 			width: 92%;
-			height: 30.7vw;
+			height: 45vw;
 			overflow: hidden;
 			border-radius: 15upx;
 			box-shadow: 0upx 8upx 25upx rgba(0, 0, 0, 0.2);
@@ -125,7 +125,7 @@
 
 			swiper {
 				width: 100%;
-				height: 30.7vw;
+				height: 45vw;
 
 				swiper-item {
 					image {

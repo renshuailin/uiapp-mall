@@ -38,7 +38,7 @@
       </view>
     </view>
     <!-- 模态框 -->
-    <modal @hide='hide' :itemData='itemData' :itemInfo='itemInfo' :isShow='isShow' />
+    <modal @setitem='setitem' @hide='hide' :itemData='itemData' :itemInfo='itemInfo' :isShow='isShow' />
     <!-- comment -->
     <view class="box comment">
       <view class="row">
@@ -138,6 +138,9 @@
       this.initData()
     },
     methods: {
+      setitem(item){
+        this.itemInfo.spec=item
+      },
       buy(){
         let list=[]
         list.push(this.itemInfo)

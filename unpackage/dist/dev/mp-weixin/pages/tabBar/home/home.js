@@ -195,7 +195,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _network = _interopRequireDefault(__webpack_require__(/*! ../../../utils/network.js */ 18));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var header = function header() {__webpack_require__.e(/*! require.ensure | pages/tabBar/home/header */ "pages/tabBar/home/header").then((function () {return resolve(__webpack_require__(/*! ./header.vue */ 70));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+var _network = _interopRequireDefault(__webpack_require__(/*! ../../../utils/network.js */ 18));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var header = function header() {__webpack_require__.e(/*! require.ensure | pages/tabBar/home/header */ "pages/tabBar/home/header").then((function () {return resolve(__webpack_require__(/*! ./header.vue */ 92));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 {
   data: function data() {

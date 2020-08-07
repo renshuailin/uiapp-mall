@@ -23,7 +23,7 @@
 	export default {
 		data() {
 			return {
-				city: '长沙'
+				city: '深圳'
 			}
 		}
 	}

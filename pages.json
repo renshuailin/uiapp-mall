@@ -29,9 +29,20 @@
 		{
 			"path": "pages/tabBar/user/user",
 			"style": {
-				"navigationBarTitleText": "我的"
+				"navigationBarTitleText": "我的",
+        "backgroundTextStyle":"light",
+        "navigationBarBackgroundColor":"#f06c7a",
+        "backgroundColorTop":"#f06c7a",
+        "navigationBarTextStyle":"white"
+
 			}
 		},
+    {
+    	"path": "pages/tabBar/user/qrcode",
+    	"style": {
+    		"navigationBarTitleText": "二维码"
+    	}
+    },
 		{
 			"path": "pages/goods/comment",
 			"style": {
@@ -104,8 +115,8 @@
 				"iconPath": "static/img/tabBar/user.png",
 				"selectedIconPath": "static/img/tabBar/user-on.png",
 				"text": "我的"
-			} 
-			
+			}
+
 		]
 	},
 	"condition" : { //模式配置，仅开发期间生效

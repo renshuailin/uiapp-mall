@@ -13,13 +13,13 @@
 					<view class="text">数量</view>
 					<count :itemInfo='itemInfo'/>
 				</view>
-				
+
 			</view>
 			<view class="btn">
 				<view class="button" @click="hide">
 					确定
 				</view>
-			</view>	
+			</view>
 		</view>
 	</view>
 </template>
@@ -33,10 +33,11 @@
 		},
 		methods:{
 			select(item){
-				this.itemInfo.spec=item
+				// 
+        this.$emit('setitem',item)
 			},
 			hide(){
-				
+
 			this.$emit('hide')
 			}
 		},

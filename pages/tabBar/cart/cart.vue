@@ -1,8 +1,10 @@
 <template>
   <view>
     <view class="list">
+
       <view class="empty" v-if="list.length==0">购物车空空如也</view>
       <view class="row" v-else v-for="(item,index) in list" :key='index'>
+
         <!-- del -->
         <view class="menu" @click="del(item)">
           <view class="icon iconfont">&#xe6a6;</view>
@@ -24,9 +26,9 @@
             <view class="info">
               <view class=" title">{{item.name}}</view>
               <view class="spec">{{item.spec}}</view>
-              <view class="number">
+              <view class="number" :style="{width:'width'}">
                 <view class="price">￥{{item.price}}</view>
-                <count :itemInfo='item' @chang='sum'/>
+                <count class="count" :itemInfo='item' @chang='sum'/>
               </view>
 
             </view>
@@ -69,10 +71,17 @@
         footer: 0,
         select: [],
         all: false,
-        price:'0.00'
+        price:'0.00',
+        width:''
       }
     },
     methods: {
+      // 兼容
+      width(){
+        //  #ifdef APP-PLUS
+       width='40%'
+        // #endif
+      },
       //结算
       confirm(){
         if(this.select.length==0){
@@ -156,8 +165,11 @@
           return
         }
 
+
         this.oldindex = this.theindex
-        this.theindex = null
+        // this.theindex = null
+//         if(this.theindex=index){
+// return        }
 
         this.initXY = [event.touches[0].pageX, event.touches[0].pageY]
       },
@@ -167,6 +179,12 @@
         }
         let moveX = event.touches[0].pageX - this.initXY[0]
         let moveY = event.touches[0].pageY - this.initXY[1]
+
+        if(moveX>10){
+          this.theindex = null
+        }
+
+        // console.log(moveX)
 
         //判断左滑动作过小
         if (Math.abs(moveX) < 5) {
@@ -186,7 +204,13 @@
         }
       },
       touchend(index, event) {
-        console.log('end')
+        // console.log('end')
+        console.log(this.theindex)
+        console.log(this.oldindex)
+
+        // if(){
+
+        // }
       },
       checkbox(item) {
         // console.log(item)
@@ -359,7 +383,7 @@
         .goods {
           width: 100%;
           display: flex;
-          padding-right: 20upx;
+          // padding-right: 20upx;
 
           .img {
             width: 22vw;
@@ -407,15 +431,24 @@
 
             .number {
               position: absolute;
+               // #ifdef a
+                // width: 45%;
+               // #endif
               width: 100%;
+              // right: -100upx;
               bottom: 0upx;
               display: flex;
               justify-content: space-between;
               align-items: flex-end;
               font-size: 28upx;
               height: 60upx;
+               .count{
+                 position: absolute;
+                 // top: 0;
+                 width: 200upx;
+                 right: 30upx;
+               }
 
-              .price {}
 
             }
           }

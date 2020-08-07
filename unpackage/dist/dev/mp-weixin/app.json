@@ -4,10 +4,11 @@
     "pages/tabBar/category/category",
     "pages/tabBar/cart/cart",
     "pages/tabBar/user/user",
+    "pages/tabBar/user/qrcode",
     "pages/goods/comment",
+    "pages/order/buy",
     "pages/goods/goods",
-    "pages/goods/detail",
-    "pages/tabBar/cart/cart.wxml"
+    "pages/goods/detail"
   ],
   "subPackages": [],
   "window": {
@@ -50,6 +51,5 @@
   },
   "usingComponents": {
     "app-status": "/components/status"
-  },
-  "sitemapLocation": "sitemap53.json"
+  }
 }
