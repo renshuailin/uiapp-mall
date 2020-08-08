@@ -40,7 +40,7 @@
     {
     	"path": "pages/tabBar/user/qrcode",
     	"style": {
-    		"navigationBarTitleText": "二维码"
+    		"navigationBarTitleText": "二维码 "
     	}
     },
 		{

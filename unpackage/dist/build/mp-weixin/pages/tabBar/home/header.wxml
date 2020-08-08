@@ -1,0 +1,1 @@
+<view><view class="header"><view class="city"><view class="icon iconfont"></view>{{city+''}}</view><view class="input"><input type="text" value="" placeholder="请输入商品名称" placeholder-style="color:#c0c0c0"/><view class="icon iconfont"></view></view><view class="info"><view class="icon iconfont"></view></view></view><view class="place"></view></view>

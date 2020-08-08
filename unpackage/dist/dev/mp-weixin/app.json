@@ -51,5 +51,6 @@
   },
   "usingComponents": {
     "app-status": "/components/status"
-  }
+  },
+  "sitemapLocation": "sitemap46.json"
 }
