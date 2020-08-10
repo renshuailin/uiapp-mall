@@ -17,7 +17,7 @@
     </view>
     <!-- title&price -->
     <view class="detail-info box">
-      <view class="price">￥{{itemInfo.price}}</view>
+      <view class="price" >￥{{itemInfo.price}}</view>
       <view class="title">{{itemInfo.name}}</view>
     </view>
     <!-- specifications -->
