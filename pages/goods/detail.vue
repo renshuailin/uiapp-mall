@@ -28,7 +28,7 @@
           <view>选择规格:</view>
           <view class="sp">
             <view :class="{'on':item==itemInfo.spec}" v-for="(item,index) in itemData.spec" :key=' index'>
-              {{item}}
+              {{item }}
             </view>
           </view>
         </view>
